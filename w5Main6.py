@@ -1,21 +1,15 @@
-﻿def computerGrade(marks):
-    if(90<=marks<=100):
+marks = raw_input("input 0~100 :")
+def Convermarksgrade(marks):
+    if 90<=float(marks)<=100:
         grade="A"
-    elif(80<=marks and mark<90):
+    elif 80<=float(marks)<90:
         grade="B"
-    elif(70<=marks and mark<80):
+    elif 70<=float(marks)<80:
         grade="C"
-    elif(60<=marks and mark<70):
+    elif 60<=float(marks)<70:
         grade="D"
-    elif(60<=marks):
-        grade="F"
+    else:
+        grade="F or input error"
     return grade
-
-def lab1():
-	marks=raw_input("enter marks")
-	marks=float(marks)
-	mygrade=computerGrade(marks)
-	print mygrade
-
-def main():
-    lab1()
+result=Convermarksgrade(marks)
+print "tour grade is %s " %result
