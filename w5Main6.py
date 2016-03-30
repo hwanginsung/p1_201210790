@@ -1,15 +1,15 @@
-marks = raw_input("input 0~100 :")
-def Convermarksgrade(marks):
-    if 90<=float(marks)<=100:
+﻿marks=raw_input("input marks: ")
+def computerGrade(marks):
+    if(90<=marks<=100):
         grade="A"
-    elif 80<=float(marks)<90:
+    elif(80<=marks and mark<90):
         grade="B"
-    elif 70<=float(marks)<80:
+    elif(70<=marks and mark<80):
         grade="C"
-    elif 60<=float(marks)<70:
+    elif(60<=marks and mark<70):
         grade="D"
-    else:
-        grade="F or input error"
+    elif(60<=marks):
+        grade="F"
     return grade
-result=Convermarksgrade(marks)
-print "tour grade is %s " %result
+result=converGrade(marks)
+print "Grade is %s" %result
